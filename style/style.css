@@ -1,0 +1,802 @@
+/* -----RESETEO----- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{list-style: none}
+
+a{text-decoration: none;}
+
+/* -----RESETEO----- */
+
+
+/*                  --------------------MOBILE--------------------                    */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+html, 
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    background: rgb(0,0,0);
+    background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 35%, rgba(130,130,130,1) 67%, rgba(255,255,255,1) 100%);
+}
+
+/* -----HEADER----- */
+.encabezado{
+    background-color: black;
+    background-size: contain;
+}
+
+.encabezado__logo{
+    width: auto;
+    height: 15vh;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.encabezado__titulo{
+    color: #FBEA39;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0.4em;
+}
+
+.encabezado__navBar{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    border: white 5px solid;
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #3d3d3d62;
+}
+
+.encabezado__navBar--button{
+    color: rgb(233, 182, 14);
+    font-weight: bold;
+    font-size: smaller;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+
+.encabezado__navBar--buttonFin{
+    margin-right: 0;
+}
+/* -----HEADER----- */
+
+/* -----SEPARADOR----- */
+.separador{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    border-top:5px black solid;
+    border-bottom:5px black solid;
+    gap: 10px;
+}
+
+.separador__imagen{
+    width: 2em;
+    height: auto;
+}
+
+/* -----SEPARADOR----- */
+
+/* -------SLIDE------- */
+.slide{
+    width: auto;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/utilidad-tres.jpeg);
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    overflow-x: scroll;
+    gap: 3em;
+}
+
+.slide__imagen{
+    width: auto;
+    height: 60vh;
+}
+/* -------SLIDE------- */
+
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: #353534;
+    margin-bottom: 3vw;
+    border: #464646 5px solid;
+    background-image: url(../images/utilidad-uno.jpeg);
+    background-size: 20%;
+}
+
+.titulo--inicio{
+    margin-top: 0.5em;
+}
+
+.info{
+    margin-bottom: 4vw;
+}
+
+.info__texto{
+    text-align: center;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.info__imagen{
+    margin-bottom: 1em;
+    padding: 1em;
+    object-fit: contain;
+}
+
+.info__imagen--dueños{
+    width: 70vw;
+    height: auto;
+
+}
+
+.info__imagen--local{
+    width: 50vw;
+    height: auto;
+}
+
+.nov{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.nov__img{
+    width: auto;
+    height: 75vh;
+    object-fit: contain;
+} 
+
+.pieDePagina{
+    background-color: black;
+    overflow: hidden;
+}
+
+.pieDePagina__section{
+    margin-bottom: 1em;
+    padding-left: 0;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__titulo{
+    color: #f8e61d; 
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.5em;
+}
+
+.pieDePagina i{
+    color: white;
+    font-size: larger;
+}
+
+.pieDePagina__section__item{
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    color: #c0ad03;
+    font-size: larger;
+}
+
+.pieDePagina__section__mapa{
+    width: 14rem;
+    height: 14rem;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__email{
+    width: 15rem;
+    height: 1.5rem;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__boton{
+    width: 15rem;
+    height: 1.5rem;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.pieDePagina__section__item--especifico{
+    text-decoration: underline;
+}
+
+.pieDePagina__section__item--wayUP{
+    text-align: right;
+    font-size: 3rem;
+}
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.formulario{
+    border:#c0ad03 solid 5px;
+    background-image: url(../images/utilidad-dos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.formulario__titulo{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(255, 255, 255, 0.651);
+    margin-bottom: 1em;
+    
+}
+
+.formulario__item{
+    font-size: medium;
+    color: black;
+    background-color: rgb(243, 208, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.formulario__item--contacto{
+    width: fit-content;
+    align-self: center;
+}
+
+.formulario__input{
+    width: 50%;
+    height: 15%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario__boton{
+    height: 3em;
+    padding: 10px;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    background-image: url(../images/utilidad-uno.jpeg);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 80vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.articulo{
+    margin-bottom: 2em;
+}
+
+.articulo__titulo{
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    background-color: rgba(240, 199, 18, 0.527);
+    border-radius: 5px;
+    border: #c0ad03 5px solid;
+    padding: 10px;
+}
+
+.articulo__texto{
+    border: 8px outset rgba(190, 187, 7, 0.65);
+    border-radius: 35px;
+    padding: 20px;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.781);
+    margin: 1em;
+}
+
+.articulo__imagen{
+    width: 95vw;
+    height: auto;
+    object-fit: contain;
+}
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.eventos{
+    border: black 5px solid;
+    margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.753);
+}
+
+.eventos__subtitulo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
+
+.eventos__texto{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.eventos__img{
+    width: auto;
+    height: 55%;
+    margin-bottom: 1em;
+    object-fit: contain;
+}
+
+.eventos__img--even2{
+    width: 80%;
+    height: auto;
+}
+
+.titulo--comment{
+    margin-bottom: 0;
+}
+
+.comments__section{
+    border: black 5px solid;
+    background-image: url(../images/utilidad-tres.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cliente{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: black solid 2px;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.comments__texto{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fce810;
+    background: rgba(0, 0, 0, 0.849);
+}
+
+.comments__lista{
+    padding: 0;
+    margin-top: 1em;
+}
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+.seccionImg{
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.seccionImg__img{   
+    width: auto;
+    height: 65%;
+    border: 8px ridge #8ba8c4;
+    object-fit: contain;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.seccionVid{
+    background-image: url(../images/utilidad-4.jpeg);
+    background-size: cover; 
+    padding: 3em;
+}
+
+video{
+    width: 85vw;
+    height: auto;
+    border: 10px solid transparent;
+    border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+}
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+/*                  --------------------MOBILE--------------------                    */
+
+/*                  --------------------TABLET--------------------                    */
+@media (min-width:576px){
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    .encabezado__titulo{
+        width: 100%;
+        font-size: 2em;
+        margin-top: 0.25em;
+    }
+
+    .encabezado__navBar--button{
+        font-size: small;
+    }
+
+    .info__texto{
+        margin-bottom: 1em;
+        font-size: larger;
+    }
+
+    .info__imagen--dueños{
+        width: 50vw;
+        margin-left: 2em;
+    }
+    
+    .info__imagen--local{
+        width: 40vw;
+    }
+
+    .nov{
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;
+        margin-bottom: 0;
+    }
+
+    .nov__img{
+        height: 85vh;
+    }
+    
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .formulario{
+    border-width: 10px;
+    }
+
+    .formulario__item{
+        font-size: larger;
+    }
+
+    .formulario__titulo{
+        font-size: 1.5em;
+    }
+
+    .formulario__input{
+        width: 25%;
+        height: 10%;
+        font-size: large;
+    }
+
+    textarea{
+        width: 50vw;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .formulario__boton{
+        margin-left: 2%;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .seccionImg__img{   
+        width: 60vw;
+    }
+
+    .seccionVid{
+        padding: 5em;
+    }
+
+    video{
+        width: 80vw;
+        border: 20px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .articulo__imagen{
+        width: 50vw;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+}
+/*                  --------------------TABLET--------------------                    */
+
+
+@media (min-width:992px){
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .eventos__texto{
+        font-size: xx-large;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    .seccionImg__img{
+        width: 30vw;
+        margin: 1em 0.2em 0;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+
+/*                  --------------------DESKTOP--------------------                    */
+@media (min-width:1024px){
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/* -----HEADER----- */
+    .encabezado{
+        height: 25vh;
+    }
+
+    .encabezado__logo{
+        height: 15vh;
+        align-self: center;
+    }
+
+    .encabezado__titulo{
+        margin-top: 1.5em;
+    }
+
+    .encabezado__navBar{
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 1em;
+        overflow-x: hidden;
+    }
+
+    .encabezado__navBar--button{
+        font-size: 1rem;
+        transition: 0.5s all ease-in-out;
+    }
+
+    li .encabezado__navBar--button:hover{
+        font-size: 2rem;
+        background-color: rgba(214, 208, 208, 0.534);
+        border-radius: 10px;
+        
+    }
+
+    .separador__imagen{
+        width: 2.5em;
+    }
+
+    .slide{
+        padding: 1em;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .slide__imagen{
+        height: 100vh;
+    }
+
+    .titulo{
+        margin-bottom: 0;
+    }
+
+    .info__texto{
+        font-size: xx-large;
+    }
+
+    .nov{
+        margin-top: 2em;
+        overflow-x: hidden;
+    }
+
+    .pieDePagina__section{
+        margin-bottom: 0;
+    }
+
+    .pieDePagina__section__mapa{
+        margin-bottom: 1em;
+    }
+    
+    .pieDePagina__section__item--wayUP{
+        margin-top: 2em;
+    }
+
+    .bi-caret-up{
+        transition: 0.6s all ease-in-out;
+    }
+    .bi-caret-up:hover{
+        font-size: 3.5rem;
+        color: #c0ad03;
+    }
+
+    .pieDePagina__section__item--especifico{
+        transition: 0.5s all  ease-in-out;
+    }
+
+    .pieDePagina__section__item--especifico:hover{
+        background-color: rgba(214, 208, 208, 0.534);
+        border-radius: 15px;
+    }
+    .pieDePagina__section__titulo{
+        margin-left: 0;
+    }
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .articulo__texto{
+        font-size: xx-large;
+    }
+
+    .articulo__imagen{
+        padding: 5em;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .formulario{
+        border-width: 10px;
+    }
+
+    .formulario__item{
+        font-size: x-large;
+    }
+
+    .formulario__titulo{
+        font-size: 2em;
+    }
+
+    .formulario__input{
+        width: 20%;
+        height: 10%;
+        font-size: larger;
+        cursor: text;
+    }
+
+    .formulario__input--desplegable{
+        cursor: pointer;
+    }
+
+    textarea{
+        width: 30vw;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .formulario__boton{
+        margin-left: 5%;
+        transition: 1s;
+    }
+
+    .formulario__boton:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .seccionImg{
+        margin-bottom: 4em;
+    }
+
+    .seccionImg__img{
+        transition: 0.5s cubic-bezier(.62,.18,.88,.53);
+    }
+
+    .seccionImg__img:hover{
+        transform: scale(1.12);
+        z-index: 2;
+    }
+
+
+    video{
+        height: 80vh;
+        border: 30px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+/*                  --------------------DESKTOP--------------------                    */
+
+@media(min-width: 1400px){
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .encabezado__navBar--button{
+        font-size: 1.5rem;
+    }
+    .slide{
+        overflow-x: hidden;
+    }
+
+    .pieDePagina__section__titulo{
+        font-size: 2.2rem;
+    }
+
+    .pieDePagina__section__item{
+        font-size: 2rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+
+/*                  --------------------DESKTOP(4K)--------------------                    */
+@media (min-width: 1680px){
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .nov__img{
+        width: 100vh;
+    }
+
+    .pieDePagina__section__email{
+        height: 3rem;
+    }
+
+    .pieDePagina__section__boton{
+        height: 3rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .articulo__titulo{
+        font-size: 3rem;
+    }
+
+    .articulo__texto{
+        font-size: 3rem;
+        padding: 1em;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .eventos__img{
+        width: 20vw;
+        height: auto;
+    }
+
+    .eventos__img--even2{
+        width: 30vw;
+    }
+
+    .eventos__subtitulo{
+        font-size: 3rem;
+    }
+
+    .eventos__texto{
+        font-size: 2rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .formulario__titulo{
+        font-size: 3rem;
+    }
+
+    .formulario__item{
+        font-size: 2rem;
+    }
+     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}

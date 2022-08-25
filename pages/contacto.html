@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>FILO.STF - FORMULARIO DE CONTACTO</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="header" class="row encabezado">
+            <img src="../images/logo-filo.jpeg" alt="Logo de filo" class="col-6 col-sm-2 col-lg-2 img-fluid encabezado__logo">
+            <h1 class="col-6 col-sm col-lg encabezado__titulo">FILO STREET FOOD</h1>
+            <nav class="col-12 col-lg align-self-lg-center">
+                <ul class="encabezado__navBar">
+                    <li class="encabezado__navBar--button"><a href="../index.html" class="encabezado__navBar--button">Inicio</a></li>
+                    <li class="encabezado__navBar--button"><a href="./carta.html" class="encabezado__navBar--button">Carta</a></li>
+                    <li class="encabezado__navBar--button"><a href="./eventos.html" class="encabezado__navBar--button">Eventos</a></li>
+                    <li class="encabezado__navBar--button"><a href="#contacto" class="encabezado__navBar--button">Contacto</a></li>
+                    <li class="encabezado__navBar--button encabezado__navBar--buttonFin"><a href="./galeria.html" class="encabezado__navBar--button">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col separador">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen separador__imagen--inicio">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+            </div>
+        </div>
+    </div>      
+
+    <main>
+        <!-- Formulario de contacto -->
+        <form action="">
+            <fieldset class="formulario">
+                <legend class="formulario__titulo">Formulario de contacto</legend>
+                <div>
+                    <label for="nombre-apellido" class="formulario__item">Nombre y apellido del solicitante:</label>
+                    <input type="text" id="nombre-apellido" name="nombre-apellido" class="formulario__input">
+                </div>
+
+                <div>
+                    <label for="email-user" class="formulario__item">Email:</label>
+                    <input type="email" id="email-user" name="email-user" class="formulario__input">
+                </div>
+
+                <div>
+                    <label for="telefono-contacto" class="formulario__item">Telefono:</label>
+                    <input type="tel" id="telefono-contact" name="telefono-contacto" class="formulario__input">
+                </div>
+
+                <div class="formulario__item formulario__item--contacto">¿Por qué medio le podremos a contactar?</div>
+
+                <div>
+                    <label for="tel" class="formulario__item">Telefono</label>
+                    <input type="radio" name="metodo-contacto" id="tel" value="metodo-telefono" >
+                    <label for="email"class="formulario__item">Email</label>
+                    <input type="radio" name="metodo-contacto" id="email" value="metodo-email">
+                </div>
+                    
+
+                <div>
+                    <label for="tipo-solicitante" class="formulario__item">Tipo de solicitante:</label>
+                    <select name="tipo-solicitante" id="tipo-solicitante" class="formulario__input formulario__input--desplegable">
+                        <option value="empresa">Empresa</option>
+                        <option value="particular">Particular</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje-solicitante" class="formulario__item">Mensaje:</label>
+                        <div>
+                            <textarea cols="30" rows="10" id="mensaje-solicitante" name="mensaje-solicitante"></textarea>
+                        </div>
+                </div>
+
+                <!-- De momento solo es la estructura del checkbox, luego se me ocurre hacer un link en terminos y condiciones que
+                    dirija o muestre tipo pop-up a los mismos -->
+                <div >
+                    <label for="terminos-condiciones" class="formulario__item">¿Acepta los términos y condiciones de nuestra empresa?</label>
+                    <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones">
+                </div>
+
+                <div>
+                    <input type="reset" value="Borrar información" class="formulario__boton">
+                    <input type="submit" value="Enviar información!" class="formulario__boton">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col separador">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen separador__imagen--inicio">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cuatro.jpeg" alt="piezas de sushi" class="separador__imagen">
+                <img src="../images/comida-ejemplo-cinco.jpeg" alt="tomate" class="separador__imagen">
+                <img src="../images/comida-ejemplo-seis.jpeg" alt="cubiertos" class="separador__imagen">
+                <img src="../images/comida-ejemplo-siete.jpeg" alt="queso" class="separador__imagen">
+                <img src="../images/comida-ejemplo-uno.jpeg" alt="ramen" class="separador__imagen">
+                <img src="../images/comida-ejemplo-dos.jpeg" alt="sandwich" class="separador__imagen">
+                <img src="../images/comida-ejemplo-tres.jpeg" alt="pieza de sushi" class="separador__imagen">
+            </div>
+        </div>
+    </div>  
+
+    <footer>
+        <!-- UBICACIÓN -->
+        <div class="pieDePagina container-fluid">
+            <div class="row">
+                <section class="col-8 col-sm-4 col-lg gap-lg-2 col-xxl-2 pieDePagina__section">
+                    <h2 class="pieDePagina__section__titulo">Ubicación</h2>
+                    <i class="bi-geo-alt"><span class="pieDePagina__section__item">Leon Morra 99</span></i>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.839535159994!2d-64.17301988554065!3d-31.418546881403447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a33a0352d4f1%3A0x1f75b747e475380f!2sFILO%20Street%20Food!5e0!3m2!1ses!2sar!4v1657831253461!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-12 pieDePagina__section__mapa"></iframe>
+                </section>
+
+            <!-- CONTACTO -->
+                <section class="col-lg col-xxl pieDePagina__section">
+                    <h2 id="contacto" class= "pieDePagina__section__titulo">Contacto</h2>
+                    <ul class="row pieDePagina__section">
+                        <i class="bi-whatsapp"><span class="col-12 pieDePagina__section__item">99999999</span></i>
+                        <i class="bi-instagram"><a href="https://www.instagram.com/filo.stf/" target="_blank"  class="pieDePagina__section__item pieDePagina__section__item--especifico">@filo.stf</a></i>
+                        <i class="bi-person-lines-fill"><a href="./contacto.html" class="pieDePagina__section__item pieDePagina__section__item--especifico">Contacto📲</a></i>
+                    </ul>
+                </section>
+
+                <!-- SUSCRIBETE  (al newsletter) -->
+                <section class="col-lg col-xxl pieDePagina__section">
+                    <h2 class= "pieDePagina__section__titulo">Suscríbete</h2>
+                    <form action="">
+                        <div>
+                            <input type="email" id="email" name="email" value="EMAIL" class="col pieDePagina__section__email"> 
+                        </div>
+                        <input type="submit" value="Suscribirme" class="col pieDePagina__section__boton">
+                    </form>
+                </section>
+
+                <!-- ACCESOS RAPIDOS -->
+                <section class="col-lg col-xxl pieDePagina__section">
+                    <h2 class= "pieDePagina__section__titulo">Accesos rápidos</h2>
+                    <ul class= "row pieDePagina__section">
+                        <li class="pieDePagina__section__item pieDePagina__section__item--especifico"><i class= "bi-caret-right"><a href="../index.html" class="pieDePagina__section__item">Inicio</a></i></li>
+                        <li class="pieDePagina__section__item pieDePagina__section__item--especifico"><i class= "bi-caret-right"><a href="./carta.html" class="pieDePagina__section__item">Carta</a></i></li>
+                        <li class="pieDePagina__section__item pieDePagina__section__item--especifico"><i class= "bi-caret-right"><a href="./eventos.html" class="pieDePagina__section__item">Eventos</a></i></li>
+                        <li class="pieDePagina__section__item pieDePagina__section__item--especifico"><i class= "bi-caret-right"><a href="./galeria.html" class="pieDePagina__section__item">Galeria</a></i></li>
+                    </ul>
+                    <a href="#header" class="row pieDePagina__section__item pieDePagina__section__item--wayUP"><i class="bi-caret-up"></i></a>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
