@@ -1,0 +1,9 @@
+.pieDePagina{
+    background-color: black;
+    overflow: hidden;
+    
+    & i{
+        color: white;
+        font-size: larger;
+    }
+}

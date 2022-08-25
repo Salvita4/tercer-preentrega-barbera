@@ -1,0 +1,29 @@
+.slide{
+    width: auto;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/utilidad-tres.jpeg);
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    overflow-x: scroll;
+    gap: 3em;
+
+    &__imagen{
+        width: auto;
+        height: 60vh;
+    }
+
+    @media (min-width:1024px){
+        padding: 1em;
+        height: 100%;
+        justify-content: space-around;
+        overflow-x: hidden;
+        
+        &__imagen{
+            height: 100vh;
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+.titulo{
+    font-family: $titulo-reutilizable-font;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: $titulo-reutilizable-color;
+    margin-bottom: 3vw;
+    border: $titulo-reutilizable-borde 5px solid;
+    background-image: url(../images/utilidad-uno.jpeg);
+    background-size: 20%;
+
+    &--inicio{
+        margin-top: 0.5em;
+    }
+    
+    @media (min-width: 1024px) {
+        margin-bottom: 0;
+    }
+}

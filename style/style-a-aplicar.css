@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -12,10 +13,55 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .encabezado {
   background-color: black;
   background-size: contain;
 }
+@media (min-width: 1024px) {
+  .encabezado {
+    height: 25vh;
+  }
+}
+
+.separador {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  gap: 10px;
+}
+.separador__imagen {
+  width: 2em;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .separador__imagen {
+    width: 2.5em;
+  }
+}
+
+main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(137deg, rgb(0, 0, 0) 0%, rgb(51, 51, 51) 35%, rgb(130, 130, 130) 67%, rgb(255, 255, 255) 100%);
+}
+
+.pieDePagina {
+  background-color: black;
+  overflow: hidden;
+}
+.pieDePagina i {
+  color: white;
+  font-size: larger;
+}
+
 .encabezado__logo {
   width: auto;
   height: 15vh;
@@ -50,6 +96,262 @@ a {
 }
 .encabezado__navBar--buttonFin {
   margin-right: 0;
+}
+@media (min-width: 576px) {
+  .encabezado__titulo {
+    width: 100%;
+    font-size: 2em;
+    margin-top: 0.25em;
+  }
+  .encabezado__navBar--button {
+    font-size: small;
+  }
+}
+@media (min-width: 1024px) {
+  .encabezado__logo {
+    height: 15vh;
+    align-self: center;
+  }
+  .encabezado__titulo {
+    margin-top: 1.5em;
+  }
+  .encabezado__navBar {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1em;
+    overflow-x: hidden;
+  }
+  .encabezado__navBar--button {
+    font-size: 1rem;
+    transition: 0.5s all ease-in-out;
+  }
+  .encabezado__navBar--button:hover {
+    font-size: 2rem;
+    background-color: rgba(214, 208, 208, 0.534);
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .encabezado__navBar--button {
+    font-size: 1.5rem;
+  }
+}
+
+.slide {
+  width: auto;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/utilidad-tres.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: scroll;
+  gap: 3em;
+}
+.slide__imagen {
+  width: auto;
+  height: 60vh;
+}
+@media (min-width: 1024px) {
+  .slide {
+    padding: 1em;
+    height: 100%;
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+  .slide__imagen {
+    height: 100vh;
+  }
+}
+
+.titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: #353534;
+  margin-bottom: 3vw;
+  border: #464646 5px solid;
+  background-image: url(../images/utilidad-uno.jpeg);
+  background-size: 20%;
+}
+.titulo--inicio {
+  margin-top: 0.5em;
+}
+@media (min-width: 1024px) {
+  .titulo {
+    margin-bottom: 0;
+  }
+}
+
+.info {
+  margin-bottom: 4vw;
+}
+.info__texto {
+  text-align: center;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 1em;
+  color: white;
+  margin-bottom: 1em;
+}
+.info__imagen {
+  margin-bottom: 1em;
+  padding: 1em;
+  object-fit: contain;
+}
+.info__imagen--dueños {
+  width: 70vw;
+  height: auto;
+}
+.info__imagen--local {
+  width: 50vw;
+  height: auto;
+}
+@media (min-width: 576px) {
+  .info__texto {
+    margin-bottom: 1em;
+    font-size: larger;
+  }
+  .info__imagen--dueños {
+    width: 50vw;
+    margin-left: 2em;
+  }
+  .info__imagen--local {
+    width: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  .info__texto {
+    font-size: xx-large;
+  }
+}
+
+.nov {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-items: center;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+.nov__img {
+  width: auto;
+  height: 75vh;
+  object-fit: contain;
+}
+@media (min-width: 576px) {
+  .nov {
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: scroll;
+    margin-bottom: 0;
+  }
+  .nov__img {
+    height: 85vh;
+  }
+}
+@media (min-width: 1024px) {
+  .nov {
+    margin-top: 2em;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1680px) {
+  .nov__img {
+    width: 100vh;
+  }
+}
+
+.pieDePagina__section {
+  margin-bottom: 1em;
+  padding-left: 0;
+  margin-left: 1em;
+}
+.pieDePagina__section__titulo {
+  color: #f8e61d;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 0.5em;
+}
+.pieDePagina__section__item {
+  padding-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  color: #c0ad03;
+  font-size: larger;
+}
+.pieDePagina__section__item--especifico {
+  text-decoration: underline;
+}
+.pieDePagina__section__item--wayUP {
+  text-align: right;
+  font-size: 3rem;
+}
+.pieDePagina__section__mapa {
+  width: 14rem;
+  height: 14rem;
+  margin-left: 1em;
+}
+.pieDePagina__section__email {
+  width: 15rem;
+  height: 1.5rem;
+  margin-left: 1em;
+}
+.pieDePagina__section__boton {
+  width: 15rem;
+  height: 1.5rem;
+  margin-left: 1em;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .pieDePagina__section {
+    margin-bottom: 0;
+  }
+  .pieDePagina__section__mapa {
+    margin-bottom: 1em;
+  }
+  .pieDePagina__section__item--wayUP {
+    margin-top: 0.5em;
+  }
+  .pieDePagina__section__item--especifico {
+    transition: 0.5s all ease-in-out;
+  }
+  .pieDePagina__section__item--especifico:hover {
+    background-color: rgba(214, 208, 208, 0.534);
+    border-radius: 15px;
+  }
+  .pieDePagina__section__titulo {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .pieDePagina__section__titulo {
+    font-size: 2.2rem;
+  }
+  .pieDePagina__section__item {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1680px) {
+  .pieDePagina__section__email {
+    height: 3rem;
+  }
+  .pieDePagina__section__boton {
+    height: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bi-caret-up {
+    transition: 0.6s all ease-in-out;
+  }
+  .bi-caret-up:hover {
+    font-size: 3.5rem;
+    color: #c0ad03;
+  }
 }
 
 /*# sourceMappingURL=style-a-aplicar.css.map */

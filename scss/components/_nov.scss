@@ -1,0 +1,36 @@
+.nov{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    gap: 1em;
+    padding-bottom: 2em;
+    
+    &__img{
+        width: auto;
+        height: 75vh;
+        object-fit: contain;
+    }
+
+    @media (min-width:576px){
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;
+        margin-bottom: 0;
+        
+        &__img{
+            height: 85vh;
+        }
+    }
+
+    @media (min-width:1024px){
+        margin-top: 2em;
+        overflow-x: hidden;
+    }
+
+    @media (min-width:1680px){
+        &__img{
+            width: 100vh;
+        }
+    }
+}

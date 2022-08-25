@@ -1,0 +1,8 @@
+.encabezado{
+    background-color: black;
+    background-size: contain;
+    
+    @media (min-width:1024px){
+        height: 25vh;
+    }
+}

@@ -1,0 +1,95 @@
+.pieDePagina__section{
+    margin-bottom: 1em;
+    padding-left: 0;
+    margin-left: 1em;
+
+    &__titulo{
+        color: $footer-titulo-color; 
+        font-size: x-large;
+        font-family: $footer-titulo-font;
+        margin-left: 0.5em;
+    }
+
+    &__item{
+        padding-left: 10px;
+        font-family: $footer-item-font;
+        font-style: normal;
+        color: $footer-item-color;
+        font-size: larger;
+
+        &--especifico{
+            text-decoration: underline;
+        }
+
+        &--wayUP{
+            text-align: right;
+            font-size: 3rem;
+        }
+    }
+
+    &__mapa{
+        width: 14rem;
+        height: 14rem;
+        margin-left: 1em;
+    }
+
+    &__email{
+        width: 15rem;
+        height: 1.5rem;
+        margin-left: 1em;
+    }
+
+    &__boton{
+        width: 15rem;
+        height: 1.5rem;
+        margin-left: 1em;
+        font-weight: bold;
+    }
+    
+    @media (min-width:1024px){
+        margin-bottom: 0;
+
+        &__mapa{
+            margin-bottom: 1em;
+        }
+        
+        &__item{
+            &--wayUP{
+                margin-top: 0.5em;
+            }
+
+            &--especifico{
+                transition: 0.5s all ease-in-out;
+                
+                &:hover{
+                    background-color: rgba(214, 208, 208, 0.534);
+                    border-radius: 15px;
+                }
+            }
+        }
+        
+        &__titulo{
+            margin-left: 0;
+        }
+    }
+
+    @media (min-width:1400px){
+        &__titulo{
+            font-size: 2.2rem;
+        }
+
+        &__item{
+            font-size: 2rem;
+        }
+    }
+
+    @media (min-width:1680px){
+        &__email{
+            height: 3rem;
+        }
+    
+        &__boton{
+            height: 3rem;
+        }
+    }
+}
