@@ -11,3 +11,9 @@ $footer-titulo-color: #f8e61d;
 $footer-titulo-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $footer-item-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $footer-item-color: #c0ad03;
+$breakpoins: ( 
+    "small": 576px,
+    "large": 1024px,
+    "x-large": 1400px,
+    "xx-large": 1680px
+)

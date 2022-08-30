@@ -2,7 +2,7 @@
     background-color: black;
     background-size: contain;
     
-    @media (min-width:1024px){
+    @include breakpoint-large{
         height: 25vh;
     }
 }

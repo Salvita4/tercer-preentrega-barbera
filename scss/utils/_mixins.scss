@@ -1,0 +1,23 @@
+@mixin breakpoint-s{
+    @media (min-width: map-get($breakpoins, "small")){
+        @content
+    }
+};
+
+@mixin breakpoint-large{
+    @media (min-width: map-get($breakpoins, "large")){
+        @content
+    }
+};
+
+@mixin breakpoint-xlarge{
+    @media (min-width: map-get($breakpoins, "x-large")){
+        @content
+    }
+};
+
+@mixin breakpoint-xxlarge{
+    @media (min-width: map-get($breakpoins, "xx-large")){
+        @content
+    }
+}
