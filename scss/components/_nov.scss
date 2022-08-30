@@ -1,8 +1,5 @@
 .nov{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-items: center;
+    @include d-flex(column, space-between, center);
     gap: 1em;
     padding-bottom: 2em;
     
@@ -12,9 +9,8 @@
         object-fit: contain;
     }
 
-    @media (min-width:576px){
-        flex-direction: row;
-        justify-content: space-around;
+    @include breakpoint-small{
+        @include d-flex(row, space-around, center);
         overflow-x: scroll;
         margin-bottom: 0;
         
@@ -23,12 +19,12 @@
         }
     }
 
-    @media (min-width:1024px){
+    @include breakpoint-large{
         margin-top: 2em;
         overflow-x: hidden;
     }
 
-    @media (min-width:1680px){
+    @include breakpoint-xxlarge{
         &__img{
             width: 100vh;
         }

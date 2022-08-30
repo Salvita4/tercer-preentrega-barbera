@@ -31,6 +31,7 @@ body {
 
 .separador {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
@@ -69,15 +70,18 @@ main {
   margin-left: 1em;
 }
 .encabezado__titulo {
-  color: #FBEA39;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
+  text-align: unset;
+  color: #FBEA39;
   margin-top: 0.4em;
 }
 .encabezado__navBar {
   margin-top: 1em;
   margin-bottom: 1em;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   overflow-x: scroll;
@@ -86,12 +90,13 @@ main {
   border-radius: 1em;
   background-color: rgba(61, 61, 61, 0.3843137255);
 }
-.encabezado__navBar--button {
-  color: #e9b60e;
-  font-weight: bold;
-  font-size: smaller;
-  text-transform: uppercase;
+.encabezado__navBar--button, .encabezado__navBar--buttonFin {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: smaller;
+  font-weight: bold;
+  text-align: unset;
+  color: #e9b60e;
+  text-transform: uppercase;
   margin-right: 10px;
 }
 .encabezado__navBar--buttonFin {
@@ -103,7 +108,7 @@ main {
     font-size: 2em;
     margin-top: 0.25em;
   }
-  .encabezado__navBar--button {
+  .encabezado__navBar--button, .encabezado__navBar--buttonFin {
     font-size: small;
   }
 }
@@ -117,23 +122,22 @@ main {
   }
   .encabezado__navBar {
     width: 60vw;
-    display: flex;
     justify-content: space-evenly;
     margin-right: 1em;
     overflow-x: hidden;
   }
-  .encabezado__navBar--button {
+  .encabezado__navBar--button, .encabezado__navBar--buttonFin {
     font-size: 1rem;
     transition: 0.5s all ease-in-out;
   }
-  .encabezado__navBar--button:hover {
+  .encabezado__navBar--button:hover, .encabezado__navBar--buttonFin:hover {
     font-size: 2rem;
-    background-color: rgba(214, 208, 208, 0.534);
+    background-color: rgba(214, 208, 208, 0.5333333333);
     border-radius: 10px;
   }
 }
 @media (min-width: 1400px) {
-  .encabezado__navBar--button {
+  .encabezado__navBar--button, .encabezado__navBar--buttonFin {
     font-size: 1.5rem;
   }
 }
@@ -142,6 +146,7 @@ main {
   width: auto;
   height: 65vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-image: url(../images/utilidad-tres.jpeg);
@@ -190,11 +195,12 @@ main {
   margin-bottom: 4vw;
 }
 .info__texto {
-  text-align: center;
-  font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 1em;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
   color: white;
+  padding: 1em;
   margin-bottom: 1em;
 }
 .info__imagen {
@@ -202,20 +208,19 @@ main {
   padding: 1em;
   object-fit: contain;
 }
-.info__imagen--dueños {
+.info__imagen--dueños, .info__imagen--local {
   width: 70vw;
   height: auto;
 }
 .info__imagen--local {
   width: 50vw;
-  height: auto;
 }
 @media (min-width: 576px) {
   .info__texto {
     margin-bottom: 1em;
     font-size: larger;
   }
-  .info__imagen--dueños {
+  .info__imagen--dueños, .info__imagen--local {
     width: 50vw;
     margin-left: 2em;
   }
@@ -232,8 +237,8 @@ main {
 .nov {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1em;
   padding-bottom: 2em;
 }
@@ -244,8 +249,10 @@ main {
 }
 @media (min-width: 576px) {
   .nov {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     overflow-x: scroll;
     margin-bottom: 0;
   }
@@ -271,17 +278,21 @@ main {
   margin-left: 1em;
 }
 .pieDePagina__section__titulo {
-  color: #f8e61d;
-  font-size: x-large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: unset;
+  color: #f8e61d;
   margin-left: 0.5em;
 }
-.pieDePagina__section__item {
+.pieDePagina__section__item, .pieDePagina__section__item--wayUP, .pieDePagina__section__item--especifico {
   padding-left: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: normal;
-  color: #c0ad03;
   font-size: larger;
+  font-weight: normal;
+  text-align: unset;
+  color: #c0ad03;
+  font-style: normal;
 }
 .pieDePagina__section__item--especifico {
   text-decoration: underline;
@@ -331,7 +342,7 @@ main {
   .pieDePagina__section__titulo {
     font-size: 2.2rem;
   }
-  .pieDePagina__section__item {
+  .pieDePagina__section__item, .pieDePagina__section__item--especifico, .pieDePagina__section__item--wayUP {
     font-size: 2rem;
   }
 }

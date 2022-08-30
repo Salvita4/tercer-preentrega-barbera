@@ -7,18 +7,14 @@
     }
 
     &__titulo{
-        color: $titulo-layout-color;
-        font-family: $titulo-layout-font;
-        font-size: 1.5rem;
+        @include texts($titulo-layout-font, 1.5rem, $titulo-layout-color, bold);
         margin-top: 0.4em;
     }
 
     &__navBar{
         margin-top: 1em;
         margin-bottom: 1em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include d-flex(row, space-between, center);
         overflow-x: scroll;
         border: $nav-borde-color 5px solid;
         padding: 0.5em;
@@ -26,20 +22,18 @@
         background-color: $nav-borde-fondo;
 
         &--button{
-            color: #e9b60e;
-            font-weight: bold;
-            font-size: smaller;
+            @include texts($nav-button-font, smaller, $nav-button-color, bold);
             text-transform: uppercase;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin-right: 10px;
             }
 
         &--buttonFin{
+            @extend .encabezado__navBar--button;
             margin-right: 0;
         }
     }
 
-    @media (min-width:576px){
+    @include breakpoint-small{
         &__titulo{
             width: 100%;
             font-size: 2em;
@@ -52,7 +46,8 @@
             }
         }
     }
-    @media (min-width:1024px){
+    
+    @include breakpoint-large{
         &__logo{
             height: 15vh;
             align-self: center;
@@ -64,7 +59,6 @@
         
         &__navBar{
             width: 60vw;
-            display: flex;
             justify-content: space-evenly;
             margin-right: 1em;
             overflow-x: hidden;
@@ -73,13 +67,14 @@
                 transition: 0.5s all ease-in-out;
                 &:hover{
                     font-size: 2rem;
-                    background-color: rgba(214, 208, 208, 0.534);
+                    background-color:$nav-animation-color;
                     border-radius: 10px;
                 }
             }
         }
     }
-    @media (min-width:1400px){
+
+    @include breakpoint-xlarge{
         &__navBar{
             &--button{
                 font-size: 1.5rem;

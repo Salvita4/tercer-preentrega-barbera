@@ -1,4 +1,4 @@
-@mixin breakpoint-s{
+@mixin breakpoint-small{
     @media (min-width: map-get($breakpoins, "small")){
         @content
     }
@@ -20,4 +20,25 @@
     @media (min-width: map-get($breakpoins, "xx-large")){
         @content
     }
+};
+
+@mixin d-flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling
+};
+
+@mixin texts($family, $size, $color, $weigth: normal, $aling: unset){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weigth;
+    text-align: $aling;
+    color: $color
+};
+
+@mixin footerParts($width, $height, $marginL){
+    width: $width;
+    height: $height;
+    margin-left: $marginL
 }

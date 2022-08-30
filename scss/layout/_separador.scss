@@ -1,7 +1,5 @@
 .separador{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include d-flex(row, space-evenly, center);
     overflow: hidden;
     border-top:5px $separador-borde-color solid;
     border-bottom:5px $separador-borde-color solid;

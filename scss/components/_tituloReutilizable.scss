@@ -1,9 +1,5 @@
 .titulo{
-    font-family: $titulo-reutilizable-font;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-    color: $titulo-reutilizable-color;
+    @include texts($titulo-reutilizable-font, xx-large, $titulo-reutilizable-color, bolder, center);
     margin-bottom: 3vw;
     border: $titulo-reutilizable-borde 5px solid;
     background-image: url(../images/utilidad-uno.jpeg);
@@ -13,7 +9,7 @@
         margin-top: 0.5em;
     }
     
-    @media (min-width: 1024px) {
+    @include breakpoint-large{
         margin-bottom: 0;
     }
 }

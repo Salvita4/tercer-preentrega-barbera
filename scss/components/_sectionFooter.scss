@@ -4,49 +4,41 @@
     margin-left: 1em;
 
     &__titulo{
-        color: $footer-titulo-color; 
-        font-size: x-large;
-        font-family: $footer-titulo-font;
+        @include texts($footer-titulo-font, x-large, $footer-titulo-color, bolder);
         margin-left: 0.5em;
     }
 
     &__item{
         padding-left: 10px;
-        font-family: $footer-item-font;
+        @include texts($footer-item-font, larger, $footer-item-color);
         font-style: normal;
-        color: $footer-item-color;
-        font-size: larger;
 
         &--especifico{
+            @extend .pieDePagina__section__item;
             text-decoration: underline;
         }
 
         &--wayUP{
+            @extend .pieDePagina__section__item;
             text-align: right;
             font-size: 3rem;
         }
     }
 
     &__mapa{
-        width: 14rem;
-        height: 14rem;
-        margin-left: 1em;
+        @include footerParts(14rem, 14rem, 1em);
     }
 
     &__email{
-        width: 15rem;
-        height: 1.5rem;
-        margin-left: 1em;
+        @include footerParts(15rem, 1.5rem, 1em);
     }
 
     &__boton{
-        width: 15rem;
-        height: 1.5rem;
-        margin-left: 1em;
+        @include footerParts(15rem, 1.5rem, 1em);
         font-weight: bold;
     }
     
-    @media (min-width:1024px){
+    @include breakpoint-large{
         margin-bottom: 0;
 
         &__mapa{
@@ -72,7 +64,7 @@
         }
     }
 
-    @media (min-width:1400px){
+    @include breakpoint-xlarge{
         &__titulo{
             font-size: 2.2rem;
         }
@@ -82,7 +74,7 @@
         }
     }
 
-    @media (min-width:1680px){
+    @include breakpoint-xxlarge{
         &__email{
             height: 3rem;
         }
