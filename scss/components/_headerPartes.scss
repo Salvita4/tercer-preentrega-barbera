@@ -7,7 +7,7 @@
     }
 
     &__titulo{
-        @include texts($titulo-layout-font, 1.5rem, $titulo-layout-color, bold);
+        @include texts($titulo-layout-font, 1.5rem, $titulo-layout-color);
         margin-top: 0.4em;
     }
 
