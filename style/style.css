@@ -201,7 +201,7 @@ main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     color: #c0ad03;
-    font-size: larger;
+    font-size: 1.8rem;
 }
 
 .pieDePagina__section__mapa{
@@ -339,10 +339,6 @@ textarea{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-.layout--eventos{
-    grid-template-rows: 18vh 6vh 86% 6vh 18vh;
-}
-
 .eventos{
     border: black 5px solid;
     display: flex;
@@ -392,8 +388,10 @@ textarea{
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: black solid 2px;
+    color:black;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.589);
+    margin: 10px;
 }
 
 .comments__texto{
@@ -402,6 +400,7 @@ textarea{
     color: #fce810;
     text-align: center;
     background: rgba(0, 0, 0, 0.849);
+    margin: 5px;
 }
 
 .comments__lista{
@@ -556,7 +555,6 @@ video{
 
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-
     .seccionImg__img{
         width: 30vw;
         margin: 1em 0.2em 0;
@@ -725,7 +723,6 @@ video{
         grid-template-rows: 8vh 25% 25%;
         row-gap: 5px;
         column-gap: 5px;
-        margin-bottom: 0;
     }
 
     .titulo--eventos{
@@ -776,10 +773,9 @@ video{
     .comments__section{
         grid-column: 3;
         grid-row: 2 / span 3;
-        height: 200%;
+        height: 190%;
         overflow-y: scroll;
     }
-
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 
@@ -823,7 +819,7 @@ video{
     }
 
     .pieDePagina__section__item{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
