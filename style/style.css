@@ -728,7 +728,7 @@ video{
         display: grid;
         height: 400vh;
         grid-template-columns: repeat(3, 33.3%); 
-        grid-template-rows: 8vh 55% 45%;
+        grid-template-rows: 8vh 50% 40%;
         row-gap: 10px;
         column-gap: 5px;
     }
