@@ -1,4 +1,4 @@
-/* -----RESETEO----- */
+    /* -----RESETEO----- */
 *{
     padding: 0;
     margin: 0;
@@ -9,12 +9,12 @@ ul, ol{list-style: none}
 
 a{text-decoration: none;}
 
-/* -----RESETEO----- */
+    /* -----RESETEO----- */
 
 
-/*                  --------------------MOBILE--------------------                    */
+    /*                  --------------------MOBILE--------------------                    */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 html, 
 body{
@@ -27,7 +27,7 @@ main{
     background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 35%, rgba(130,130,130,1) 67%, rgba(255,255,255,1) 100%);
 }
 
-/* -----HEADER----- */
+    /* -----HEADER----- */
 .encabezado{
     background-color: black;
     background-size: contain;
@@ -72,9 +72,9 @@ main{
 .encabezado__navBar--buttonFin{
     margin-right: 0;
 }
-/* -----HEADER----- */
+    /* -----HEADER----- */
 
-/* -----SEPARADOR----- */
+    /* -----SEPARADOR----- */
 .separador{
     display: flex;
     justify-content: space-evenly;
@@ -90,9 +90,9 @@ main{
     height: auto;
 }
 
-/* -----SEPARADOR----- */
+    /* -----SEPARADOR----- */
 
-/* -------SLIDE------- */
+    /* -------SLIDE------- */
 .slide{
     width: auto;
     height: 65vh;
@@ -110,7 +110,7 @@ main{
     width: auto;
     height: 60vh;
 }
-/* -------SLIDE------- */
+    /* -------SLIDE------- */
 
 .titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -201,7 +201,7 @@ main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     color: #c0ad03;
-    font-size: larger;
+    font-size: 1.8rem;
 }
 
 .pieDePagina__section__mapa{
@@ -232,9 +232,9 @@ main{
     font-size: 3rem;
 }
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .formulario{
     border:#c0ad03 solid 5px;
     background-image: url(../images/utilidad-dos.jpeg);
@@ -295,11 +295,15 @@ textarea{
 }
 
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .articulo{
     margin-bottom: 2em;
+}
+
+.articulo--fin{
+    margin-bottom: 0;
 }
 
 .articulo__titulo{
@@ -332,11 +336,20 @@ textarea{
     height: auto;
     object-fit: contain;
 }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+.contenedor{
+    padding-bottom: 1em;
+}
+
 .eventos{
     border: black 5px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
     margin-bottom: 1em;
     background-color: rgba(255, 255, 255, 0.753);
 }
@@ -344,16 +357,18 @@ textarea{
 .eventos__subtitulo{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
+    text-align: center;
 }
 
 .eventos__texto{
     font-size: x-large;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .eventos__img{
-    width: auto;
-    height: 55%;
+    width: 65vw;
+    height: 65vh;
     margin-bottom: 1em;
     object-fit: contain;
 }
@@ -378,14 +393,19 @@ textarea{
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: black solid 2px;
+    color:black;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.589);
+    margin: 10px;
 }
 
 .comments__texto{
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fce810;
+    text-align: center;
     background: rgba(0, 0, 0, 0.849);
+    margin: 5px;
 }
 
 .comments__lista{
@@ -393,9 +413,9 @@ textarea{
     margin-top: 1em;
 }
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 .seccionImg{
     margin-bottom: 1em;
@@ -425,13 +445,14 @@ video{
 }
 
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-/*                  --------------------MOBILE--------------------                    */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*                  --------------------TABLET--------------------                    */
+    /*                  --------------------MOBILE--------------------                    */
+
+    /*                  --------------------TABLET--------------------                    */
 @media (min-width:576px){
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     .encabezado__titulo{
         width: 100%;
@@ -468,9 +489,9 @@ video{
         height: 85vh;
     }
     
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .formulario{
     border-width: 10px;
     }
@@ -498,12 +519,12 @@ video{
     .formulario__boton{
         margin-left: 2%;
     }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .seccionImg__img{   
-        width: 60vw;
+        width: 55vw;
     }
 
     .seccionVid{
@@ -516,41 +537,44 @@ video{
         border-image: url(../images/utilidad-tres.jpeg) 30 fill;
     }
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .articulo__imagen{
-        width: 50vw;
+        width: 60vw;
     }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 }
-/*                  --------------------TABLET--------------------                    */
+    /*                  --------------------TABLET--------------------                    */
 
+    /*                  --------------------TABLET-XXl--------------------                    */
 
 @media (min-width:992px){
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .eventos__texto{
         font-size: xx-large;
     }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .seccionImg__img{
         width: 30vw;
         margin: 1em 0.2em 0;
     }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 }
 
-/*                  --------------------DESKTOP--------------------                    */
-@media (min-width:1024px){
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*                  --------------------TABLET-XXl--------------------                    */
 
-/* -----HEADER----- */
+
+    /*                  --------------------DESKTOP--------------------                    */
+@media (min-width:1024px){
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /* -----HEADER----- */
     .encabezado{
         height: 25vh;
     }
@@ -643,19 +667,21 @@ video{
     }
 
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .articulo__texto{
         font-size: xx-large;
     }
 
-    .articulo__imagen{
-        padding: 5em;
+    .articulo__imagen{   
+        width: 35vw;
+        padding: 10em;
     }
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .formulario{
         border-width: 10px;
     }
@@ -695,7 +721,68 @@ video{
         cursor: pointer;
     }
 
-/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%); 
+        grid-template-rows: 8vh 45% 45%;
+        row-gap: 10px;
+        column-gap: 5px;
+        height: 400vh;
+    }
+
+    .titulo--eventos{
+        align-self: center;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .titulo--comment{
+        align-self: center;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .eventos{
+        justify-content: space-evenly;
+    }
+    .eventos-uno{
+        grid-column: 1/ span 2;
+        grid-row: 2;
+    }
+
+    .eventos-dos{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .eventos__img{
+        width: 35vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .eventos__img--even2{
+        width: 55vw;
+    }
+    
+    .eventos__subtitulo{
+        font-size: 3rem;
+    }
+
+    .eventos__texto{
+        font-size: 2rem;
+    }
+
+    .comments__section{
+        grid-column: 3;
+        grid-row: 2 / 4;
+        height: 70%;
+        overflow-y: scroll;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -729,6 +816,7 @@ video{
     .encabezado__navBar--button{
         font-size: 1.5rem;
     }
+
     .slide{
         overflow-x: hidden;
     }
@@ -738,9 +826,23 @@ video{
     }
 
     .pieDePagina__section__item{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .contenedor{
+        grid-template-rows: 8vh 45% 45%;
+    }
+    
+    .eventos__img{
+        width: 30vw;
+    }
+
+    .eventos__img--even2{
+        width: 60vw;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 }
 
 /*                  --------------------DESKTOP(4K)--------------------                    */
@@ -772,17 +874,24 @@ video{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+    .contenedor{
+        grid-template-rows: 8vh 50% 50%;
+        height: 150vh;
+        padding-bottom: 7em;
+    }
+    
     .eventos__img{
         width: 20vw;
         height: auto;
     }
-
     .eventos__img--even2{
         width: 30vw;
     }
-
+    
     .eventos__subtitulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .eventos__texto{
@@ -799,4 +908,27 @@ video{
         font-size: 2rem;
     }
      /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+
+@media (min-width: 2560px){
+    .contenedor{
+        grid-template-rows: 8vh 45% 45%;
+        height: 450vh;
+    }
+
+    .eventos__img{
+        width: 20vw;
+    }
+
+    .eventos__img--even2{
+        width: 35vw;
+    }
+
+    .eventos__subtitulo{
+        font-size: 4rem;
+    }
+
+    .eventos__texto{
+        font-size: 3rem;
+    }
 }
