@@ -727,7 +727,7 @@ video{
     .contenedor{
         display: grid;
         grid-template-columns: repeat(3, 33.3%); 
-        grid-template-rows: 8vh 45% 45%;
+        grid-template-rows: 8vh 55% 45%;
         row-gap: 10px;
         column-gap: 5px;
         height: 400vh;
@@ -748,6 +748,7 @@ video{
     .eventos{
         justify-content: space-evenly;
     }
+
     .eventos-uno{
         grid-column: 1/ span 2;
         grid-row: 2;
