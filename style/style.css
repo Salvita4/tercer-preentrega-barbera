@@ -726,11 +726,11 @@ video{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .contenedor{
         display: grid;
+        height: 400vh;
         grid-template-columns: repeat(3, 33.3%); 
         grid-template-rows: 8vh 55% 45%;
         row-gap: 10px;
         column-gap: 5px;
-        height: 400vh;
     }
 
     .titulo--eventos{
@@ -878,8 +878,8 @@ video{
 
 
     .contenedor{
-        grid-template-rows: 8vh 50% 50%;
         height: 150vh;
+        grid-template-rows: 8vh 50% 50%;
         padding-bottom: 7em;
     }
     
@@ -892,11 +892,11 @@ video{
     }
     
     .eventos__subtitulo{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .eventos__texto{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -913,8 +913,8 @@ video{
 
 @media (min-width: 2560px){
     .contenedor{
-        grid-template-rows: 8vh 45% 45%;
         height: 450vh;
+        grid-template-rows: 8vh 45% 45%;
     }
 
     .eventos__img{
