@@ -339,6 +339,11 @@ textarea{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+.contenedor{
+    padding-bottom: 1em;
+}
+
 .eventos{
     border: black 5px solid;
     display: flex;
@@ -362,8 +367,8 @@ textarea{
 }
 
 .eventos__img{
-    width: auto;
-    height: 55%;
+    width: 65vw;
+    height: 65vh;
     margin-bottom: 1em;
     object-fit: contain;
 }
@@ -519,7 +524,7 @@ video{
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .seccionImg__img{   
-        width: 60vw;
+        width: 55vw;
     }
 
     .seccionVid{
@@ -536,7 +541,7 @@ video{
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .articulo__imagen{
-        width: 50vw;
+        width: 60vw;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -669,9 +674,11 @@ video{
         font-size: xx-large;
     }
 
-    .articulo__imagen{
-        padding: 5em;
+    .articulo__imagen{   
+        width: 35vw;
+        padding: 10em;
     }
+
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -717,39 +724,16 @@ video{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-    .contenedor{
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 8vh 25% 25%;
-        row-gap: 5px;
-        column-gap: 5px;
-    }
-
     .titulo--eventos{
-        margin-top: 0;
-        grid-column: 1 / span 2;
-        grid-row: 1;
         align-self: center;
     }
 
     .titulo--comment{
-        grid-column: 3;
-        grid-row: 1;
         align-self: center;
     }
 
     .eventos{
         justify-content: space-around;
-    }
-
-    .eventos--eve1{
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-    
-    .eventos--eve2{
-        grid-column: 1 / span 2;
-        grid-row: 3;
     }
 
     .eventos__img{
@@ -770,10 +754,8 @@ video{
         font-size: 2rem;
     }
 
-    .comments__section{
-        grid-column: 3;
-        grid-row: 2 / span 3;
-        height: 190%;
+    .comments__lista{
+        height: 40%;
         overflow-y: scroll;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -823,11 +805,6 @@ video{
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-    .contenedor{
-        grid-template-rows: 8vh 30% 30%;
-    }
-    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 }
 
 /*                  --------------------DESKTOP(4K)--------------------                    */
@@ -859,11 +836,6 @@ video{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-
-    .contenedor{
-        grid-template-rows: 8vh 45% 45%;
-    }
-
     .eventos__img{
         width: 30vw;
         height: auto;
