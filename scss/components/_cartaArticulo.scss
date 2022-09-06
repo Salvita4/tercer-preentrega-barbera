@@ -12,14 +12,14 @@
         border: $carta-titulo-borderColor 5px solid;
         padding: 10px;
     }
-    &____texto{
+    &__texto{
         border: 8px outset $carta-text-borderColor;
         border-radius: 35px;
         padding: 20px;
         @include texts($carta-text-font, x-large, $carta-text-color, normal, center);
         font-style: oblique;
-        background-color: $carta-text-borderColor;
-        margin: 1em
+        background-color: $carta-text-backColor;
+        margin: 1em;
     }
     &__imagen{
         width: 95vw;
