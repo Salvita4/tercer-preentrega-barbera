@@ -1,0 +1,77 @@
+.eventos{
+    border: $eventos-border-color 5px solid;
+    @include d-flex(column, center, center);
+    gap: 1em;
+    margin-bottom: 1em;
+    background-color: $eventos-backColor;
+    &__subtitulo{
+        @include texts($eventos-subtl-font, xx-large, $eventos-subtl-color, normal, center);
+    }
+    &__texto{
+        @include texts($eventos-text-font, x-large, $eventos-text-color, normal, center);
+        padding: 2px;
+    }
+    &__video{
+        width: 85vw;
+        height: auto;
+        padding: 1em;
+        object-fit: contain;
+    }
+    
+    @include breakpoint-small{
+        &__video{
+            width: 45vw;
+        }
+    }
+
+    @include breakpoint-medium{
+        &__texto{
+            font-size: xx-large;
+        }
+        &__video{
+            width: 40vw;
+        }
+    }
+
+    @include breakpoint-large{
+        justify-content: space-evenly;
+        &__video{
+            width: 45vw;
+        }
+        &__subtitulo{
+            font-size: 3rem;
+        }
+        &__texto{
+            font-size: 2.5rem;
+        }
+    }
+
+    @include breakpoint-xlarge{
+        &__video{
+            width: 50vw;
+        }
+    }
+
+    @include breakpoint-xxlarge{
+        &__video{
+            width: 30vw;
+        }
+        &__subtitulo{
+            font-size: 3rem;
+        }
+        &__texto{
+            font-size: 2rem;
+        }
+    }
+
+    @include breakpoint-xxxlarge{
+        &__subtitulo{
+            font-size: 4rem;
+        }
+        &__texto{
+            font-size: 3.5rem;
+        }
+    }
+}
+
+

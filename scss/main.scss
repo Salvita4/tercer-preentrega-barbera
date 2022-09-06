@@ -1,14 +1,21 @@
+//-----------UTILS-----------//
 @import "./utils/variables";
 @import "./utils/mixins";
+//-----------UTILS-----------//
 
+//-----------BASE-----------//
 @import "./base/reseteo";
 @import "./base/ajustes";
+//-----------BASE-----------//
 
+//-----------LAYOUT-----------//
 @import "./layout/header";
 @import "./layout/separador";
 @import "./layout/main";
 @import "./layout/footer";
+//-----------LAYOUT-----------//
 
+//-----------COMPONENTS-----------//
 @import "./components/headerPartes";
 @import "./components/slide";
 @import "./components/tituloReutilizable";
@@ -19,3 +26,13 @@
 @import "./components/formulario";
 @import "./components/textArea";
 @import "./components/cartaArticulo";
+@import "./components/eventosSection.scss";
+@import "./components/eventosClientes";
+@import "./components/eventosComments";
+@import "./components/galeriaImg";
+@import "./components/galeriaVideo";
+//-----------COMPONENTS-----------//
+
+//-----------PAGES-----------//
+@import "./pages/eventos";
+//-----------PAGES-----------//

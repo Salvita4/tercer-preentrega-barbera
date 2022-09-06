@@ -1,3 +1,4 @@
+    /* -----RESETEO----- */
 * {
   padding: 0;
   margin: 0;
@@ -11,13 +12,18 @@ ul, ol {
 a {
   text-decoration: none;
 }
+    /* -----RESETEO----- */
 
+    /* -----AJUSTES----- */
 html,
 body {
   width: 100%;
   overflow-x: hidden;
 }
+    /* -----AJUSTES----- */
 
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+  /* -----HEADER----- */
 .encabezado {
   background-color: black;
   background-size: contain;
@@ -27,41 +33,6 @@ body {
     height: 25vh;
   }
 }
-
-.separador {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  overflow: hidden;
-  border-top: 5px black solid;
-  border-bottom: 5px black solid;
-  gap: 10px;
-}
-.separador__imagen {
-  width: 2em;
-  height: auto;
-}
-@media (min-width: 1024px) {
-  .separador__imagen {
-    width: 2.5em;
-  }
-}
-
-main {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(137deg, rgb(0, 0, 0) 0%, rgb(51, 51, 51) 35%, rgb(130, 130, 130) 67%, rgb(255, 255, 255) 100%);
-}
-
-.pieDePagina {
-  background-color: black;
-  overflow: hidden;
-}
-.pieDePagina i {
-  color: white;
-  font-size: larger;
-}
-
 .encabezado__logo {
   width: auto;
   height: 15vh;
@@ -140,7 +111,38 @@ main {
     font-size: 1.5rem;
   }
 }
+  /* -----HEADER----- */
 
+  /* -----SEPARADOR----- */
+.separador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  gap: 10px;
+}
+.separador__imagen {
+  width: 2em;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .separador__imagen {
+    width: 2.5em;
+  }
+}
+  /* -----SEPARADOR----- */
+
+  /* -----FONDO MAIN----- */
+main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(137deg, rgb(0, 0, 0) 0%, rgb(51, 51, 51) 35%, rgb(130, 130, 130) 67%, rgb(255, 255, 255) 100%);
+}
+  /* -----FONDO MAIN----- */
+
+  /* -----SLIDE----- */
 .slide {
   width: auto;
   height: 65vh;
@@ -169,7 +171,9 @@ main {
     height: 100vh;
   }
 }
+  /* -----SLIDE----- */
 
+  /* -----TITULO REUTILIZABLE----- */
 .titulo {
   font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: xx-large;
@@ -189,7 +193,9 @@ main {
     margin-bottom: 0;
   }
 }
+  /* -----TITULO REUTILIZABLE----- */
 
+  /* -----INFO----- */
 .info {
   margin-bottom: 4vw;
 }
@@ -224,7 +230,9 @@ main {
     font-size: xx-large;
   }
 }
+  /* -----INFO----- */
 
+  /* -----NOVEDADES----- */
 .nov {
   display: flex;
   flex-direction: column;
@@ -266,6 +274,17 @@ main {
   .nov__img {
     width: 100vh;
   }
+}
+  /* -----NOVEDADES----- */
+
+  /* -----FOOTER----- */
+.pieDePagina {
+  background-color: black;
+  overflow: hidden;
+}
+.pieDePagina i {
+  color: white;
+  font-size: larger;
 }
 
 .pieDePagina__section {
@@ -360,7 +379,11 @@ main {
     color: #c0ad03;
   }
 }
+  /* -----FOOTER----- */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+  /* -----FORMULARIO----- */
 .formulario {
   border: #c0ad03 solid 5px;
   background-image: url(../images/utilidad-dos.jpeg);
@@ -485,7 +508,11 @@ textarea {
     width: 30vw;
   }
 }
+  /* -----FORMULARIO----- */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+  /* -----PLATO----- */
 .articulo, .articulo--fin {
   margin-bottom: 2em;
 }
@@ -545,5 +572,322 @@ textarea {
     padding: 1em;
   }
 }
+  /* -----PLATO----- */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+  /* -----SECCION EVENTOS----- */
+.eventos {
+  border: black 5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.7529411765);
+}
+.eventos__subtitulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+}
+.eventos__texto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  padding: 2px;
+}
+.eventos__video {
+  width: 85vw;
+  height: auto;
+  padding: 1em;
+  object-fit: contain;
+}
+@media (min-width: 576px) {
+  .eventos__video {
+    width: 45vw;
+  }
+}
+@media (min-width: 992px) {
+  .eventos__texto {
+    font-size: xx-large;
+  }
+  .eventos__video {
+    width: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  .eventos {
+    justify-content: space-evenly;
+  }
+  .eventos__video {
+    width: 45vw;
+  }
+  .eventos__subtitulo {
+    font-size: 3rem;
+  }
+  .eventos__texto {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .eventos__video {
+    width: 50vw;
+  }
+}
+@media (min-width: 1680px) {
+  .eventos__video {
+    width: 30vw;
+  }
+  .eventos__subtitulo {
+    font-size: 3rem;
+  }
+  .eventos__texto {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 2560px) {
+  .eventos__subtitulo {
+    font-size: 4rem;
+  }
+  .eventos__texto {
+    font-size: 3.5rem;
+  }
+}
+  /* -----SECCION EVENTOS----- */
+
+  /* -----SECCION COMENTARIOS----- */
+.cliente {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  border: black solid 2px;
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  margin: 10px;
+}
+@media (min-width: 1024px) {
+  .cliente {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 2560px) {
+  .cliente {
+    font-size: 4rem;
+  }
+}
+
+.titulo--comment {
+  margin-bottom: 0;
+}
+
+.comments {
+  border: black 5px solid;
+  background-image: url(../images/utilidad-tres.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.comments__texto {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+  color: #fce810;
+  background: rgba(0, 0, 0, 0.8470588235);
+  margin: 5px;
+}
+.comments__lista {
+  padding: 0;
+  margin-top: 1em;
+}
+@media (min-width: 1024px) {
+  .comments {
+    height: 75%;
+    overflow-y: scroll;
+  }
+  .comments__texto {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .comments {
+    height: 80%;
+  }
+}
+@media (min-width: 1680px) {
+  .comments {
+    height: 85%;
+  }
+}
+@media (min-width: 2560px) {
+  .comments {
+    height: 90%;
+  }
+  .comments__texto {
+    font-size: 3.5rem;
+  }
+}
+  /* -----SECCION COMENTARIOS----- */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+  /* -----SECCION IMAGENES----- */
+.seccionImg {
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.seccionImg__img {
+  width: auto;
+  height: 65%;
+  border: 8px ridge #8ba8c4;
+  object-fit: contain;
+  padding: 0;
+  margin-bottom: 1em;
+}
+@media (min-width: 576px) {
+  .seccionImg__img {
+    width: 55vw;
+  }
+}
+@media (min-width: 992px) {
+  .seccionImg__img {
+    width: 30vw;
+    margin: 1em 0.2em 0;
+  }
+}
+@media (min-width: 1024px) {
+  .seccionImg {
+    margin-bottom: 4em;
+  }
+  .seccionImg__img {
+    transition: 0.5s cubic-bezier(0.62, 0.18, 0.88, 0.53);
+  }
+  .seccionImg__img:hover {
+    transform: scale(1.12);
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+  /* -----SECCION IMAGENES----- */
+
+  /* -----SECCION VIDEOS----- */
+.seccionVid {
+  background-image: url(../images/utilidad-4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3em;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .seccionVid {
+    padding: 5em;
+  }
+}
+
+.video-galeria {
+  width: 85vw;
+  height: auto;
+  border: 10px solid transparent;
+  border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+}
+@media (min-width: 576px) {
+  .video-galeria {
+    width: 80vw;
+    border: 20px solid transparent;
+    border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+  }
+}
+@media (min-width: 1024px) {
+  .video-galeria {
+    height: 80vh;
+    border: 30px solid transparent;
+    border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+  }
+}
+  /* -----SECCION VIDEOS----- */
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<LAYOUT EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.contenedor {
+  padding-bottom: 1em;
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    height: 400vh;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 8vh 40% 55%;
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+}
+@media (min-width: 1400px) {
+  .contenedor {
+    height: 450vh;
+    grid-template-rows: 8vh 45% 50%;
+  }
+}
+@media (min-width: 1680px) {
+  .contenedor {
+    height: 300vh;
+    grid-template-rows: 8vh 50% 50%;
+    padding-bottom: 7em;
+  }
+}
+@media (min-width: 2560px) {
+  .contenedor {
+    height: 400vh;
+    grid-template-rows: 8vh 45% 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo--eventos {
+    align-self: center;
+    grid-column: 1/span 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo--comment {
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eventos {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eventos-uno {
+    grid-column: 1/span 2;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eventos-dos {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .comments {
+    grid-column: 3;
+    grid-row: 2/4;
+  }
+}
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<LAYOUT EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 /*# sourceMappingURL=style-a-aplicar.css.map */

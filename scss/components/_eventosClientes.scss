@@ -1,0 +1,14 @@
+.cliente{
+    @include texts($eventos-clientes-font, xx-large, $eventos-clientes-color, normal, center);
+    border: $eventos-clientes-borderColor solid 2px;
+    background-color: $eventos-clientes-backColor;
+    margin: 10px;
+
+    @include breakpoint-large{
+        font-size: 3rem;
+    }
+
+    @include breakpoint-xxxlarge{
+        font-size: 4rem;
+    }
+}

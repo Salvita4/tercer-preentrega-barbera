@@ -45,6 +45,24 @@ $carta-text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 $carta-text-backColor: #ffffffc7;
 $carta-text-color: black;
 
+$eventos-border-color: black;
+$eventos-backColor: #ffffffc0;
+$eventos-subtl-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$eventos-subtl-color: black;
+$eventos-text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$eventos-text-color: black;
+$eventos-clientes-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$eventos-clientes-color: black;
+$eventos-clientes-backColor: #ffffff96; 
+$eventos-clientes-borderColor: black;
+$eventos-comments-borderColor: black;
+$eventos-comments-back: url(../images/utilidad-tres.jpeg);
+$eventos-comments-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$eventos-comments-color: #fce810;
+$eventos-comments-backColor: #000000d8;
+
+$galeria-img-borderColor: #8ba8c4;
+$galeria-video-back: url(../images/utilidad-4.jpeg);
 
 $breakpoints: ( 
     "small": 576px,

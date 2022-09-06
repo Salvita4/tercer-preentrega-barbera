@@ -378,7 +378,7 @@ textarea{
     margin-bottom: 0;
 }
 
-.comments__section{
+.comments{
     border: black 5px solid;
     background-image: url(../images/utilidad-tres.jpeg);
     background-size: cover;
@@ -774,7 +774,7 @@ textarea{
         font-size: 3rem;
     }
 
-    .comments__section{
+    .comments{
         grid-column: 3;
         grid-row: 2 / 4;
         height: 75%;
@@ -846,7 +846,7 @@ textarea{
         width: 75vh;
     }
 
-    .comments__section{
+    .comments{
         height: 80%;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -901,7 +901,7 @@ textarea{
         font-size: 2rem;
     }
 
-    .comments__section{
+    .comments{
         height: 85%;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -935,7 +935,7 @@ textarea{
         font-size: 3.5rem;
     }
 
-    .comments__section{
+    .comments{
         height: 90%;
     }
     .cliente{

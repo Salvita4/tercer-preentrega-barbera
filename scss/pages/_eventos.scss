@@ -1,0 +1,71 @@
+.contenedor{
+    padding-bottom: 1em;
+    @include breakpoint-large{
+        display: grid;
+        height: 400vh;
+        grid-template-columns: repeat(3, 33.3%); 
+        grid-template-rows: 8vh 40% 55%;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+    @include breakpoint-xlarge{
+        height: 450vh;
+        grid-template-rows: 8vh 45% 50%;
+    }
+
+    @include breakpoint-xxlarge{
+        height: 300vh;
+        grid-template-rows: 8vh 50% 50%;
+        padding-bottom: 7em;
+    }
+
+    @include breakpoint-xxxlarge{
+        height: 400vh;
+        grid-template-rows: 8vh 45% 50%;
+    }
+}
+
+.titulo--eventos{
+    @include breakpoint-large{
+        align-self: center;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+}
+
+.titulo--comment{
+    @include breakpoint-large{
+        align-self: center;
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+
+.eventos{
+    @include breakpoint-large{
+        justify-content: space-evenly;
+    }
+}
+
+.eventos-uno{
+    @include breakpoint-large{
+        grid-column: 1/ span 2;
+        grid-row: 2;
+    }
+}
+
+.eventos-dos{
+    @include breakpoint-large{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+}
+
+.comments{
+    @include breakpoint-large{
+        grid-column: 3;
+        grid-row: 2 / 4;
+    }
+}
+

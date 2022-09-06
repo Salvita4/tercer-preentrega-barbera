@@ -1,0 +1,37 @@
+.seccionImg{
+    margin-bottom: 1em;
+    padding: 1em;
+    &__img{
+        width: auto;
+        height: 65%;
+        border: 8px ridge $galeria-img-borderColor;
+        object-fit: contain;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    @include breakpoint-small{
+        &__img{   
+            width: 55vw;
+        }
+    }
+
+    @include breakpoint-medium{
+        &__img{
+            width: 30vw;
+            margin: 1em 0.2em 0;
+        }
+    }
+
+    @include breakpoint-large{
+        margin-bottom: 4em;
+        &__img{
+            transition: 0.5s cubic-bezier(.62,.18,.88,.53);
+            &:hover{
+                transform: scale(1.12);
+                z-index: 2;
+                cursor: pointer;
+            }
+        }
+    }
+}

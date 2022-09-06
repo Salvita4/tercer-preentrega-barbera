@@ -1,0 +1,28 @@
+.seccionVid{
+    @include backgroundImage($galeria-video-back, cover);
+    padding: 3em;
+    justify-content: center;
+
+    @include breakpoint-small{
+        padding: 5em;
+    }
+}
+
+.video-galeria{
+    width: 85vw;
+    height: auto;
+    border: 10px solid transparent;
+    border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+
+    @include breakpoint-small{
+        width: 80vw;
+        border: 20px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+
+    @include breakpoint-large{
+        height: 80vh;
+        border: 30px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+}

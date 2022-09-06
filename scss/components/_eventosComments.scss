@@ -1,0 +1,40 @@
+.titulo--comment{
+    margin-bottom: 0;
+}
+
+.comments{
+    border: $eventos-comments-borderColor 5px solid;
+    @include backgroundImage($eventos-comments-back, cover);
+    &__texto{
+        @include texts($eventos-comments-font, x-large, $eventos-comments-color, normal, center);
+        background: $eventos-comments-backColor;
+        margin: 5px;
+    }
+    &__lista{
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    @include breakpoint-large{
+        height: 75%;
+        overflow-y: scroll;
+        &__texto{
+            font-size: 2rem;
+        }
+    }
+
+    @include breakpoint-xlarge{
+        height: 80%;
+    }
+    
+    @include breakpoint-xxlarge{
+        height: 85%;
+    }
+
+    @include breakpoint-xxxlarge{
+        height: 90%;
+        &__texto{
+            font-size: 3.5rem;
+        }
+    }
+}
