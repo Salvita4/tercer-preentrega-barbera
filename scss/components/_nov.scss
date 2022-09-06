@@ -1,27 +1,31 @@
 .nov{
     @include d-flex(column, space-between, center);
-    gap: 1em;
     padding-bottom: 2em;
-    
+    gap: 1em;
+
     &__img{
         width: auto;
         height: 75vh;
         object-fit: contain;
+        padding: 1em
     }
 
     @include breakpoint-small{
         @include d-flex(row, space-around, center);
         overflow-x: scroll;
         margin-bottom: 0;
-        
         &__img{
             height: 85vh;
+            padding: 0.5em
         }
     }
 
     @include breakpoint-large{
         margin-top: 2em;
         overflow-x: hidden;
+        &__img{
+            padding: 0;
+        }
     }
 
     @include breakpoint-xxlarge{

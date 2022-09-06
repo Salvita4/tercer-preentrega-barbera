@@ -1,0 +1,12 @@
+textarea{
+    width: 80vw;
+    @include texts($textArea-font, large, $textArea-text-color);
+
+    @include breakpoint-small{
+        width: 50vw;
+    }
+
+    @include breakpoint-large{
+        width: 30vw;
+    }
+}

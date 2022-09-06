@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -207,25 +206,17 @@ main {
   margin-bottom: 1em;
   padding: 1em;
   object-fit: contain;
-}
-.info__imagen--dueños, .info__imagen--local {
   width: 70vw;
   height: auto;
-}
-.info__imagen--local {
-  width: 50vw;
 }
 @media (min-width: 576px) {
   .info__texto {
     margin-bottom: 1em;
     font-size: larger;
   }
-  .info__imagen--dueños, .info__imagen--local {
-    width: 50vw;
-    margin-left: 2em;
-  }
-  .info__imagen--local {
+  .info__imagen {
     width: 40vw;
+    margin-right: 2em;
   }
 }
 @media (min-width: 1024px) {
@@ -239,13 +230,14 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
   padding-bottom: 2em;
+  gap: 1em;
 }
 .nov__img {
   width: auto;
   height: 75vh;
   object-fit: contain;
+  padding: 1em;
 }
 @media (min-width: 576px) {
   .nov {
@@ -258,12 +250,16 @@ main {
   }
   .nov__img {
     height: 85vh;
+    padding: 0.5em;
   }
 }
 @media (min-width: 1024px) {
   .nov {
     margin-top: 2em;
     overflow-x: hidden;
+  }
+  .nov__img {
+    padding: 0;
   }
 }
 @media (min-width: 1680px) {
@@ -362,6 +358,191 @@ main {
   .bi-caret-up:hover {
     font-size: 3.5rem;
     color: #c0ad03;
+  }
+}
+
+.formulario {
+  border: #c0ad03 solid 5px;
+  background-image: url(../images/utilidad-dos.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+.formulario__titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: large;
+  font-weight: normal;
+  text-align: unset;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.651);
+  margin-bottom: 1em;
+}
+.formulario__item {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  text-align: unset;
+  color: black;
+  background-color: #f3d007;
+}
+.formulario__item--contacto {
+  width: fit-content;
+  align-self: center;
+}
+.formulario__input {
+  width: 50%;
+  height: 15%;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formulario__boton {
+  height: 3em;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: large;
+  font-weight: normal;
+  text-align: unset;
+  color: black;
+  border-radius: 10px;
+  background-image: url(../images/utilidad-uno.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) {
+  .formulario {
+    border-width: 10px;
+  }
+  .formulario__item {
+    font-size: larger;
+  }
+  .formulario__input {
+    width: 25%;
+    height: 10%;
+    font-size: large;
+  }
+  .formulario__boton {
+    margin-left: 2%;
+  }
+}
+@media (min-width: 1024px) {
+  .formulario {
+    border-width: 10px;
+  }
+  .formulario__item {
+    font-size: x-large;
+  }
+  .formulario__titulo {
+    font-size: 2em;
+  }
+  .formulario__input {
+    width: 20%;
+    height: 10%;
+    font-size: larger;
+    cursor: text;
+  }
+  .formulario__input--desplegable {
+    cursor: pointer;
+  }
+  .formulario__boton {
+    margin-left: 5%;
+    transition: 1s;
+  }
+  .formulario__boton:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+@media (min-width: 1680px) {
+  .formulario__titulo {
+    font-size: 3rem;
+  }
+  .formulario__item {
+    font-size: 2rem;
+  }
+}
+
+textarea {
+  width: 80vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: normal;
+  text-align: unset;
+  color: black;
+}
+@media (min-width: 576px) {
+  textarea {
+    width: 50vw;
+  }
+}
+@media (min-width: 1024px) {
+  textarea {
+    width: 30vw;
+  }
+}
+
+.articulo, .articulo--fin {
+  margin-bottom: 2em;
+}
+.articulo--fin {
+  margin-bottom: 0;
+}
+.articulo__titulo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  background-color: rgba(240, 199, 18, 0.5254901961);
+  border-radius: 5px;
+  border: #c0ad03 5px solid;
+  padding: 10px;
+}
+.articulo____texto {
+  border: 8px outset rgba(190, 187, 7, 0.6509803922);
+  border-radius: 35px;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  font-style: oblique;
+  background-color: rgba(190, 187, 7, 0.6509803922);
+  margin: 1em;
+}
+.articulo__imagen {
+  width: 95vw;
+  height: auto;
+  object-fit: contain;
+}
+@media (min-width: 576px) {
+  .articulo__imagen {
+    width: 60vw;
+  }
+}
+@media (min-width: 1024px) {
+  .articulo__texto {
+    font-size: xx-large;
+  }
+  .articulo__imagen {
+    width: 35vw;
+    padding: 10em;
+  }
+}
+@media (min-width: 1680px) {
+  .articulo__titulo {
+    font-size: 3rem;
+  }
+  .articulo__texto {
+    font-size: 3rem;
+    padding: 1em;
   }
 }
 

@@ -1,0 +1,55 @@
+.articulo{
+    margin-bottom: 2em;
+    &--fin{
+        @extend .articulo;
+        margin-bottom: 0;
+    }
+    &__titulo{
+        @include texts($carta-titulo-font, xx-large, $carta-titulo-color, normal, center);
+        text-decoration: underline;
+        background-color: $carta-titulo-backColor;
+        border-radius: 5px;
+        border: $carta-titulo-borderColor 5px solid;
+        padding: 10px;
+    }
+    &____texto{
+        border: 8px outset $carta-text-borderColor;
+        border-radius: 35px;
+        padding: 20px;
+        @include texts($carta-text-font, x-large, $carta-text-color, normal, center);
+        font-style: oblique;
+        background-color: $carta-text-borderColor;
+        margin: 1em
+    }
+    &__imagen{
+        width: 95vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    @include breakpoint-small{
+        &__imagen{
+            width: 60vw;
+        }
+    }
+
+    @include breakpoint-large{
+        &__texto{
+            font-size: xx-large;
+        }
+        &__imagen{   
+            width: 35vw;
+            padding: 10em;
+        }
+    }
+
+    @include breakpoint-xxlarge{
+        &__titulo{
+            font-size: 3rem;
+        }
+        &__texto{
+            font-size: 3rem;
+            padding: 1em;
+        }
+    }
+}

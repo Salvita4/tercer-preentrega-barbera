@@ -7,7 +7,7 @@
     <meta name="description" content="FILO STREET FOOD todo el sabor del mundo en un plato| ¿QUERÉS SABER MÁS? CONTACTATE CON NOSOTROS | +54 9 351 659-7390">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style-a-aplicar.css">
     <title>FORMULARIO DE CONTACTO-FILO STREET FOOD-Delivery/Take Away/Al Paso</title>
 </head>
 
@@ -84,8 +84,8 @@
                 <div>
                     <label for="tel" class="formulario__item">Telefono</label>
                     <input type="radio" name="metodo-contacto" id="tel" value="metodo-telefono" >
-                    <label for="email"class="formulario__item">Email</label>
-                    <input type="radio" name="metodo-contacto" id="email" value="metodo-email">
+                    <label for="email-contacto"class="formulario__item">Email</label>
+                    <input type="radio" name="metodo-contacto" id="email-contacto" value="metodo-email">
                 </div>
                     
 
@@ -104,16 +104,16 @@
                         </div>
                 </div>
 
-                <!-- De momento solo es la estructura del checkbox, luego se me ocurre hacer un link en terminos y condiciones que
-                    dirija o muestre tipo pop-up a los mismos -->
                 <div >
                     <label for="terminos-condiciones" class="formulario__item">¿Acepta los términos y condiciones de nuestra empresa?</label>
                     <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones">
                 </div>
 
-                <div>
-                    <input type="reset" value="Borrar información" class="formulario__boton">
-                    <input type="submit" value="Enviar información!" class="formulario__boton">
+                <div class="text-center">
+                    <label for="borrar-info"></label>        
+                    <input id="borrar-info" type="reset" value="Borrar información" class="formulario__boton">
+                    <label for="enviar-info"></label>
+                    <input id="enviar-info" type="submit" value="Enviar información!" class="formulario__boton">
                 </div>
             </fieldset>
         </form>
@@ -175,9 +175,11 @@
                     <h2 class= "pieDePagina__section__titulo">Suscríbete</h2>
                     <form action="">
                         <div>
+                            <label for="email"></label>
                             <input type="email" id="email" name="email" value="EMAIL" class="col pieDePagina__section__email"> 
                         </div>
-                        <input type="submit" value="Suscribirme" class="col pieDePagina__section__boton">
+                        <label for="suscribe"></label>
+                        <input id="suscribe" type="submit" value="Suscribirme" class="col pieDePagina__section__boton">
                     </form>
                 </section>
 

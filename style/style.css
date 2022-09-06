@@ -311,7 +311,6 @@ textarea{
     font-size: xx-large;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
     text-decoration: underline;
     color: white;
     background-color: rgba(240, 199, 18, 0.527);
@@ -365,18 +364,14 @@ textarea{
     font-size: x-large;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px;
 }
 
-.eventos__img{
-    width: 65vw;
-    height: 65vh;
-    margin-bottom: 1em;
-    object-fit: contain;
-}
-
-.eventos__img--even2{
-    width: 80%;
+.eventos__video{
+    width: 65vh;
     height: auto;
+    padding: 1em;
+    object-fit: contain;
 }
 
 .titulo--comment{
@@ -436,9 +431,10 @@ textarea{
     background-image: url(../images/utilidad-4.jpeg);
     background-size: cover; 
     padding: 3em;
+    justify-content: center;
 }
 
-video{
+.video-galeria{
     width: 85vw;
     height: auto;
     border: 10px solid transparent;
@@ -513,8 +509,6 @@ video{
 
     textarea{
         width: 50vw;
-        font-size: large;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .formulario__boton{
@@ -532,7 +526,7 @@ video{
         padding: 5em;
     }
 
-    video{
+    .video-galeria{
         width: 80vw;
         border: 20px solid transparent;
         border-image: url(../images/utilidad-tres.jpeg) 30 fill;
@@ -546,6 +540,12 @@ video{
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    .eventos__video{
+        width: 45vh;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 }
     /*                  --------------------TABLET--------------------                    */
 
@@ -556,6 +556,10 @@ video{
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .eventos__texto{
         font-size: xx-large;
+    }
+
+    .eventos__video{
+        width: 65vh;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -606,7 +610,7 @@ video{
         font-size: 2rem;
         background-color: rgba(214, 208, 208, 0.534);
         border-radius: 10px;
-        
+        color: white;        
     }
 
     .separador__imagen{
@@ -708,8 +712,6 @@ video{
 
     textarea{
         width: 30vw;
-        font-size: larger;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .formulario__boton{
@@ -729,7 +731,7 @@ video{
         display: grid;
         height: 400vh;
         grid-template-columns: repeat(3, 33.3%); 
-        grid-template-rows: 8vh 50% 40%;
+        grid-template-rows: 8vh 40% 55%;
         row-gap: 10px;
         column-gap: 5px;
     }
@@ -760,29 +762,30 @@ video{
         grid-row: 3;
     }
 
-    .eventos__img{
-        width: 35vw;
-        height: auto;
-        object-fit: contain;
+    .eventos__video{
+        width: 55vh;
     }
 
-    .eventos__img--even2{
-        width: 55vw;
-    }
-    
     .eventos__subtitulo{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .eventos__texto{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .comments__section{
         grid-column: 3;
         grid-row: 2 / 4;
-        height: 70%;
+        height: 75%;
         overflow-y: scroll;
+    }
+    .cliente{
+        font-size: 3rem;
+    }
+
+    .comments__texto{
+        font-size: 2rem;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -799,10 +802,11 @@ video{
     .seccionImg__img:hover{
         transform: scale(1.12);
         z-index: 2;
+        cursor: pointer;
     }
 
 
-    video{
+    .video-galeria{
         height: 80vh;
         border: 30px solid transparent;
         border-image: url(../images/utilidad-tres.jpeg) 30 fill;
@@ -834,15 +838,16 @@ video{
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .contenedor{
-        grid-template-rows: 8vh 45% 45%;
+        height: 450vh;
+        grid-template-rows: 8vh 45% 50%;
     }
     
-    .eventos__img{
-        width: 30vw;
+    .eventos__video{
+        width: 75vh;
     }
 
-    .eventos__img--even2{
-        width: 60vw;
+    .comments__section{
+        height: 80%;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 }
@@ -879,25 +884,25 @@ video{
 
 
     .contenedor{
-        height: 150vh;
+        height: 250vh;
         grid-template-rows: 8vh 50% 50%;
         padding-bottom: 7em;
     }
     
-    .eventos__img{
-        width: 20vw;
-        height: auto;
-    }
-    .eventos__img--even2{
-        width: 30vw;
+    .eventos__video{
+        width: 50vh;
     }
     
     .eventos__subtitulo{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .eventos__texto{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .comments__section{
+        height: 85%;
     }
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -914,16 +919,12 @@ video{
 
 @media (min-width: 2560px){
     .contenedor{
-        height: 450vh;
-        grid-template-rows: 8vh 45% 45%;
+        height: 350vh;
+        grid-template-rows: 8vh 45% 50%;
     }
 
-    .eventos__img{
-        width: 20vw;
-    }
-
-    .eventos__img--even2{
-        width: 35vw;
+    .eventos__video{
+        width: 65vh;
     }
 
     .eventos__subtitulo{
@@ -931,6 +932,16 @@ video{
     }
 
     .eventos__texto{
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+
+    .comments__section{
+        height: 90%;
+    }
+    .cliente{
+        font-size: 4rem;
+    }
+    .comments__texto{
+        font-size: 3.5rem;
     }
 }

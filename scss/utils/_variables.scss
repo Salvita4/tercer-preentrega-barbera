@@ -1,24 +1,56 @@
 $titulo-layout-color: #FBEA39;
 $titulo-layout-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 $nav-borde-color: white;
 $nav-borde-fondo: #3d3d3d62;
 $nav-button-color: #e9b60e;
 $nav-button-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $nav-animation-color:  #d6d0d088;
+
 $separador-borde-color: black;
+
 $titulo-reutilizable-font: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $titulo-reutilizable-color: #353534;
 $titulo-reutilizable-borde: #464646;
+
 $info-texto-color: white;
 $info-texto-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 $footer-titulo-color: #f8e61d;
 $footer-titulo-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $footer-item-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $footer-item-color: #c0ad03;
 
-$breakpoins: ( 
+$form-imagen-fondo: url(../images/utilidad-dos.jpeg);
+$form-titulo-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$form-titulo-color: black;
+$form-titulo-backColor: rgba(255, 255, 255, 0.651);
+$form-borde-color: #c0ad03;
+$form-texto-color: black;
+$form-texto-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$form-texto-backColor: #f3d007;
+$form-boton-color: black;
+$form-boton-fondo: url(../images/utilidad-uno.jpeg);
+$form-boton-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+$textArea-font: Arial, Helvetica, sans-serif;
+$textArea-text-color: black;
+
+$carta-titulo-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$carta-titulo-color: white;
+$carta-titulo-backColor: #f0c71286;
+$carta-titulo-borderColor: #c0ad03;
+$carta-text-borderColor: #bebb07a6;
+$carta-text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$carta-text-backColor: #ffffffc7;
+$carta-text-color: black;
+
+
+$breakpoints: ( 
     "small": 576px,
+    "medium": 992px,
     "large": 1024px,
     "x-large": 1400px,
-    "xx-large": 1680px
+    "xx-large": 1680px,
+    "xxx-large": 2560px
 )
